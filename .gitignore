@@ -1,0 +1,15 @@
+# Rust build output
+/target
+**/*.rs.bk
+
+# Windows
+Thumbs.db
+Desktop.ini
+*.pdb
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/

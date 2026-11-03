@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "values": [
+    {"name": "hold queue id", "group": "queues", "value": 1, "source": "app2.exe function 0x46cd50"},
+    {"name": "rip queue id", "group": "queues", "value": 2, "source": "app2.exe function 0x46cfd0"},
+    {"name": "print queue id", "group": "queues", "value": 3, "source": "app2.exe function 0x46ceb0"},
+    {"name": "hold queue colour", "group": "style", "value": "#FFE0C1", "source": "app2.exe function 0x46cd50 (COLORREF 0xC1E0FF)"},
+    {"name": "rip queue colour", "group": "style", "value": "#E1E1FF", "source": "app2.exe function 0x46cfd0 (COLORREF 0xFFE1E1)"},
+    {"name": "print queue colour", "group": "style", "value": "#FFDFDF", "source": "app2.exe function 0x46ceb0 (COLORREF 0xDFDFFF)"},
+    {"name": "progress bar colour", "group": "style", "value": "#8080FF", "source": "app2.exe function 0x450dc0 (CBrush 0xFF8080)"},
+    {"name": "progress max", "group": "queues", "value": 100, "unit": "%", "source": "app2.exe function 0x450dc0"},
+    {"name": "status text padding", "group": "style", "value": 6, "unit": "px", "source": "app2.exe function 0x450dc0"},
+    {"name": "nest name prefix", "group": "nesting", "value": "Nest ", "source": "app2.exe function 0x450dc0, string 0x49af10"},
+    {"name": "virtual ink decrement", "group": "ink", "value": 100, "unit": "ml", "source": "app2.exe function 0x42f820"},
+    {"name": "minimum jobs to nest", "group": "nesting", "value": 2, "source": "app2.exe string table 0x506c54"},
+    {"name": "nest gap", "group": "nesting", "value": 10, "unit": "mm", "estimated": true},
+    {"name": "tiling overlap", "group": "nesting", "value": 10, "unit": "mm", "estimated": true},
+    {"name": "drop volume", "group": "ink", "value": 3.0, "unit": "pL", "source": "OutputDrivers/InkVolumeDefaults.xml Default model"},
+    {"name": "ink level default", "group": "ink", "value": "3 – Balanced (default)", "source": "OutputDrivers/InkMixing.xml Eco-Solvent"},
+    {"name": "max ink volume start", "group": "ink", "value": 60, "unit": "%", "source": "OutputDrivers/InkMixing.xml Eco-Solvent"},
+    {"name": "max ink volume end", "group": "ink", "value": 150, "unit": "%", "source": "OutputDrivers/InkMixing.xml Eco-Solvent"},
+    {"name": "max slope", "group": "ink", "value": 77, "source": "OutputDrivers/InkMixing.xml Eco-Solvent"},
+    {"name": "ink limit curve shape", "group": "ink", "value": "linear bend after start, capped at end", "estimated": true},
+    {"name": "passes options", "group": "driver", "value": "1,2,3,4,5,6,7,8,9,10,12,13,14,15,16,20,24,32", "source": "AmComSolventW2LOC.dll string 0x100028ba"},
+    {"name": "speed options", "group": "driver", "value": "Alto,Meio,Baixo", "source": "AmComSolventW2LOC.dll string 0x100028ba"},
+    {"name": "direction options", "group": "driver", "value": "Unidirecional,Bidirecional", "source": "AmComSolventW2LOC.dll string 0x10002882"},
+    {"name": "resolutions", "group": "driver", "value": "720x720,720x1080,720x1440,1440x1440", "estimated": true},
+    {"name": "print speed base", "group": "estimation", "value": 32, "unit": "m2/h at 1 pass", "estimated": true},
+    {"name": "rip raster limit", "group": "rip", "value": 60, "unit": "megapixels", "estimated": true},
+    {"name": "ink bottle", "group": "ink", "value": 1000, "unit": "ml", "estimated": true},
+    {"name": "points per inch", "group": "vectorcraft", "value": 72, "source": "vectorcraft-cli --help (--scale = pixels per point)"}
+  ]
+}
